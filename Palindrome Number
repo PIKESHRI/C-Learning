@@ -1,0 +1,24 @@
+using System;
+using System.IO;
+using System.Text;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int n,rem, sum=0;
+        Console.WriteLine ("Enter a String");
+        n = Convert.ToInt32(Console.ReadLine());
+        int temp=n;
+        while(n>0){
+          rem= n%10;
+          sum= (sum*10)+rem;
+          n=n/10;
+        }
+        if (sum==temp)
+            Console.WriteLine(sum+ "is a Palindrome No.");
+        else
+            Console.WriteLine(sum+ "is not a Palindrome No.");
+        
+    }
+}
