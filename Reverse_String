@@ -1,0 +1,17 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter a String");
+        string str = Console.ReadLine();
+        string revStr = "";
+        for (int i=str.Length-1;i>=0;i--)
+        {
+           revStr += str[i] ;
+        }
+        
+        Console.WriteLine(revStr);
+    }
+}
